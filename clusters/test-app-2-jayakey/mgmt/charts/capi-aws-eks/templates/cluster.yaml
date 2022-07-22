@@ -26,9 +26,6 @@ spec:
   region: {{ .Values.global.region }}
   sshKeyName: {{ .Values.global.sshKeyName }}
   version: {{ .Values.global.kubernetesVersion }}
-  identityRef:
-    kind: AWSClusterStaticIdentity
-    name: f9e6df715920438ea85f9e8f76cfd674-aws
 ---
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineDeployment
